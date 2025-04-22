@@ -101,7 +101,7 @@ p {
 }
 h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 2em;
+  font-size: 2rem;
   color: #cc8d1a;
   text-align: center;
   padding: 5rem;
@@ -112,9 +112,12 @@ h2 {
   text-align: center;
   padding: 5rem;
 }
+.titulo_{
+  font-size: 3rem;
+}
 .img_carrusel {
   border-radius: 1rem;
-  height: 1000px;
+  height: 100vh;
 }
 .carousel-item {
   display: flex;
@@ -124,40 +127,44 @@ h2 {
   display: flex;
   justify-content: center;
 }
-
-.img_pases {
-  width: 300px;
-  height: 500px;
-  border-radius: 1rem;
-}
-.box_principal_equipamiento {
+.container-cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
+  justify-content: space-evenly;
 }
-.img_principal_equipamiento {
-  width: 500px;
-  height: 500px;
-  margin: 50px;
-  border-radius: 1rem;
+.card {
+  border-radius: 12rem;
+  border: none;
+  margin-bottom: 5rem;
 }
-.tarjetas_de_pases {
+.card-body {
+  background-color: goldenrod;
+}
+.card-text {
+  color: black;
+  border-radius: 12rem;
+}
+.boton-inscripcion {
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+.boton-inscripcion:hover {
+  background-color: white;
+  color: black;
+}
+.presentacion {
   display: flex;
-  align-content: space-around;
-  padding: 0 1rem;
+  margin-top: 10vh;
 }
-.pases {
+.titulo_presentacion {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-left: 25vh;
 }
-.pass {
-  width: 400px;
-  height: 600px;
-  margin: 0 1rem;
-  border-radius: 1rem;
+.texto_presentacion {
+  display: flex;
+  padding: 5rem;
+  margin-left: 20vh;
+  text-align: left;
 }
 .box_contacto {
   display: flex;
