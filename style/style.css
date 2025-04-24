@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 /*paleta de colores*/
-/*#16232E*/
-/*#CC8D1A*/
-/*#E3C75F*/
-/*#BDA523*/
+/*#0D0D0D*/
+/*#734002*/
+/*#A66D03*/
+/*#F2CB05*/
 /*alternativos*/
 /*#011526*/
 /*#012E40*/
@@ -13,6 +12,7 @@
 
 /*encabezado y menu navegable*/
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -21,58 +21,55 @@ html {
 }
 a {
   text-decoration: none;
-  color: #cc8d1a;
+  color: goldenrod;
 }
 ul {
   display: flex;
   width: 100%;
   margin-top: 0%;
   justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 4%;
+  height: 100%;
 }
 li {
   display: flex;
-  padding: 20px;
-  margin: 10px;
+  padding: 10px;
 }
-ul li a:hover {
+.text-gold:hover {
   color: white;
 }
-main {
-  padding-top: 12%;
-}
-nav {
+header {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
-  background-color: black;
+  top: 0;
+  height: 25vh;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(13, 13, 13, 0.6);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 2.5rem 0;
+  align-items: center;
 }
 
-.logo_gym {
+.container-fluid {
+  background-color: transparent !important;
+}
+
+.logo {
   width: 100px;
   height: 100px;
-  padding: 20px;
-}
-
-.menu_navegable {
-  font-family: "Montserrat", sans-serif;
-  list-style: none;
-  text-align: center;
 }
 
 /*seccion y cuerpo*/
-section img {
-  width: 100%;
-  height: 80%;
+main {
+  padding-top: 0px;
+  position: relative;
+  z-index: 1;
 }
 p {
   font-family: "Montserrat", sans-serif;
   color: #e3c75f;
-}
-.box_membresias_pases {
-  display: flex;
-  justify-content: space-evenly;
 }
 .membresias_pases {
   text-align: center;
@@ -106,35 +103,18 @@ h1 {
   text-align: center;
   padding: 5rem;
 }
-h2 {
-  font-family: "Raleway", sans-serif;
-  color: #cc8d1a;
-  text-align: center;
-  padding: 5rem;
-}
-.titulo_{
+
+.titulo_ {
   font-size: 3rem;
-}
-.img_carrusel {
-  border-radius: 1rem;
-  height: 100vh;
-}
-.carousel-item {
-  display: flex;
-  justify-content: center;
-}
-.carousel-item.active {
-  display: flex;
-  justify-content: center;
-}
-.container-cards {
-  display: flex;
-  justify-content: space-evenly;
 }
 .card {
   border-radius: 12rem;
   border: none;
   margin-bottom: 5rem;
+  min-height: 35rem;
+}
+.titulo-de-tarjeta {
+  font-size: 1.25rem;
 }
 .card-body {
   background-color: goldenrod;
@@ -147,6 +127,8 @@ h2 {
   background-color: black;
   padding: 0.5rem;
   border-radius: 15px;
+  width: 40%;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .boton-inscripcion:hover {
   background-color: white;
@@ -207,55 +189,201 @@ body {
   background-color: black;
 }
 /*pie de pagina*/
+footer {
+  border-top: 2px solid #444;
+  background-color: #1a1a1a;
+}
+
 .footer {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
   align-items: flex-end;
 }
-.politica_terminos {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+
+footer a {
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.logo {
+  max-width: 120px;
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: brightness(1.2);
+}
+.boxes_footer {
+  flex: 1 1 250px;
+  min-width: 200px;
+  flex-wrap: wrap;
+}
+.politica_terminos,
+.redes_footer {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
-.politica_term_cont {
-  padding: 1rem;
+
+.politica_terminos {
+  list-style: none;
+  padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem; /* espacio entre enlaces */
 }
+
+.politica_term_cont a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.politica_term_cont a:hover {
+  color: #fff;
+}
+
+.redes_footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .redes {
   width: 40px;
   height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
-.img_whatsapp {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  bottom: 45px;
-  right: 20px;
+.redes:hover {
+  transform: scale(1.2);
+  filter: brightness(1.4);
 }
-.boxes_footer {
-  width: 30%;
+
+.img_whatsapp:hover {
+  transform: scale(1.2); /* Aumentamos el tamaño al hacer hover */
+  filter: brightness(1.4); /* Efecto de iluminación */
 }
-.boxes_footer p {
-  padding: 15px;
+/* Estilo del botón hamburguesa */
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: auto;
 }
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: goldenrod;
+  display: block;
+  position: relative;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: goldenrod;
+  left: 0;
+}
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
 @media (max-width: 576px) {
-  html {
-    width: 100%;
+ 
+  main {
+    padding-top: 160px;
   }
-  nav {
-    display: flex;
-    flex-wrap: wrap;
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
   }
-  .menu_navegable {
+  ul {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin: 0;
     padding: 0;
   }
-  .img_carrusel {
+  .logo{
+    padding-top: 20px;
+    
+  }
+
+  .card {
+    width: 90% !important;
+    margin: 0 auto 2rem auto;
+  }
+  .footer {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 40%;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .boxes_footer {
+    width: 100%;
+    max-width: 300px;
+  }
+  .redes {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  #navbarMenu {
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  #navbarMenu a {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 768px) {
+  #navbarMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: rgba(13, 13, 13, 0.95);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    z-index: 9998;
+  }
+
+  #navbarMenu a {
+    font-size: 1rem;
+    color: goldenrod;
+    padding: 0.5rem 1rem;
+  }
+
+  #navbarMenu a:hover {
+    color: white;
   }
 }
