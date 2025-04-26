@@ -51,16 +51,13 @@ header {
   padding: 2.5rem 0;
   align-items: center;
 }
-
 .container-fluid {
   background-color: transparent !important;
 }
-
 .logo {
   width: 100px;
   height: 100px;
 }
-
 /*seccion y cuerpo*/
 main {
   padding-top: 0px;
@@ -82,6 +79,7 @@ p {
   align-items: center;
   text-align: left;
   padding: 1rem;
+  margin-top: 130px;
 }
 .membresia_clasica {
   padding: 0 10rem;
@@ -94,7 +92,13 @@ p {
   padding: 1rem;
 }
 .membresia_flexible {
-  padding: 0 10rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: #cc8d1a;
+  text-align: center;
+  padding: 5rem;
+  margin-left: 15rem;
+  
 }
 h1 {
   font-family: "Raleway", sans-serif;
@@ -107,9 +111,9 @@ h1 {
 .titulo_ {
   font-size: 3rem;
 }
+
 .card {
-  border-radius: 12rem;
-  border: none;
+  border: #444 solid;
   margin-bottom: 5rem;
   min-height: 35rem;
 }
@@ -127,7 +131,7 @@ h1 {
   background-color: black;
   padding: 0.5rem;
   border-radius: 15px;
-  width: 40%;
+  width: 150px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .boton-inscripcion:hover {
@@ -147,6 +151,63 @@ h1 {
   padding: 5rem;
   margin-left: 20vh;
   text-align: left;
+}
+.container_box_principal_equipamiento {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.box_principal_equipamiento {
+  position: relative;
+  width: 45%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.box_principal_equipamiento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.text_piso_equipamiento {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.text_piso_equipamiento h2 {
+  margin: 0 0 10rem;
+  font-size: 24px;
+}
+
+.text_piso_equipamiento button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #A66D03;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+}
+
+.text_piso_equipamiento button:hover {
+  background-color: white;
 }
 .box_contacto {
   display: flex;
@@ -193,7 +254,6 @@ footer {
   border-top: 2px solid #444;
   background-color: #1a1a1a;
 }
-
 .footer {
   display: flex;
   flex-direction: row;
@@ -202,16 +262,13 @@ footer {
   padding: 1.5rem 1rem;
   align-items: flex-end;
 }
-
 footer a {
   color: #ccc;
   transition: color 0.3s ease;
 }
-
 footer a:hover {
   color: #fff;
 }
-
 .logo {
   max-width: 120px;
   width: 100px;
@@ -230,7 +287,6 @@ footer a:hover {
   padding: 0;
   margin: 0;
 }
-
 .politica_terminos {
   list-style: none;
   padding: 0;
@@ -240,23 +296,19 @@ footer a:hover {
   flex-direction: column;
   gap: 0.5rem; /* espacio entre enlaces */
 }
-
 .politica_term_cont a {
   text-decoration: none;
   color: #ccc;
   transition: color 0.3s ease;
 }
-
 .politica_term_cont a:hover {
   color: #fff;
 }
-
 .redes_footer {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
-
 .redes {
   width: 40px;
   height: 40px;
@@ -266,10 +318,9 @@ footer a:hover {
   transform: scale(1.2);
   filter: brightness(1.4);
 }
-
 .img_whatsapp:hover {
-  transform: scale(1.2); /* Aumentamos el tamaño al hacer hover */
-  filter: brightness(1.4); /* Efecto de iluminación */
+  transform: scale(1.2);
+  filter: brightness(1.4); 
 }
 /* Estilo del botón hamburguesa */
 .navbar-toggler {
@@ -278,7 +329,6 @@ footer a:hover {
   padding: 0.5rem 1rem;
   margin-left: auto;
 }
-
 .navbar-toggler-icon {
   width: 30px;
   height: 3px;
@@ -316,14 +366,42 @@ footer a:hover {
     margin: 0;
     padding: 0;
   }
+  .presentacion{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .titulo_presentacion,.texto_presentacion{
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 1rem;
+  }
   .logo{
     padding-top: 20px;
-    
   }
 
   .card {
     width: 90% !important;
     margin: 0 auto 2rem auto;
+  }
+  .container_box_principal_equipamiento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.1rem;
+  }
+  .box_principal_equipamiento{
+    width: 100%;
+    margin-bottom: 0.5rem;
+
   }
   .footer {
     display: flex;
@@ -333,6 +411,7 @@ footer a:hover {
     text-align: center;
     gap: 1rem;
     padding: 1.5rem 1rem;
+    
   }
 
   .boxes_footer {
@@ -362,8 +441,7 @@ footer a:hover {
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
   }
-}
-@media (max-width: 768px) {
+
   #navbarMenu {
     position: absolute;
     top: 100%;
@@ -386,4 +464,21 @@ footer a:hover {
   #navbarMenu a:hover {
     color: white;
   }
+  .presentacion{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .titulo_presentacion,.texto_presentacion{
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 1rem;
 }
