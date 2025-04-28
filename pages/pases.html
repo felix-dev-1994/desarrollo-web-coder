@@ -3,68 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Membresias</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Acerca de</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
-      <!-- Header / Navbar (fluido) -->
-  <header>
+    <!-- Header / Navbar (fluido) -->
+    <header>
       <div class="container-fluid bg-dark text-white py-3">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-     <a href="../index.html"><img class="logo" src="../assets/img/goldsgymlogo.png" alt=""></a>
-      <!-- Botón hamburguesa solo visible en mobile -->
-      <button class="navbar-toggler d-md-none" type="button" id="menu-toggle" aria-label="Abrir menú">
-        <span style="display:block; width:25px; height:3px; background:#F2CB05; margin:5px 0;"></span>
-        <span style="display:block; width:25px; height:3px; background:#F2CB05; margin:5px 0;"></span>
-        <span style="display:block; width:25px; height:3px; background:#F2CB05; margin:5px 0;"></span>
-      </button>
-      
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <a href="../index.html"
+            ><img class="logo" src="../assets/img/goldsgymlogo.png" alt="logotipo de hombre levantando pesas gold's gym en color amarillo y negro"
+          /></a>
+          <!-- Botón hamburguesa solo visible en mobile -->
+          <button
+            class="navbar-toggler d-md-none"
+            type="button"
+            id="menu-toggle"
+            aria-label="Abrir menú"
+          >
+            <span
+              style="
+                display: block;
+                width: 25px;
+                height: 3px;
+                background: #f2cb05;
+                margin: 5px 0;
+              "
+            ></span>
+            <span
+              style="
+                display: block;
+                width: 25px;
+                height: 3px;
+                background: #f2cb05;
+                margin: 5px 0;
+              "
+            ></span>
+            <span
+              style="
+                display: block;
+                width: 25px;
+                height: 3px;
+                background: #f2cb05;
+                margin: 5px 0;
+              "
+            ></span>
+          </button>
 
-<!-- Menú de navegación -->
-<nav id="navbarMenu" class="d-none d-md-flex">
-  <a href="acerca_de.html" class="text-gold mx-2">Acerca de</a>
-  <a href="membresias.html" class="text-gold mx-2">Membresias</a>
-  <a href="pases.html" class="text-gold mx-2">Pases</a>
-  <a href="contacto.html" class="text-gold mx-2">Contacto</a>
-</nav>
-
-</header>
-
-    <main>
-      <section>
-        <div class="tarjetas_de_pases">
-          <div class="pases">
-            <a href="#"
-              ><img
-                src="../assets/img/pases1.jpg"
-                alt="collage de imagenes mostrando barras, discos y mancuernas"
-                class="pass"
-            /></a>
-            <p>por dia $30</p>
-          </div>
-          <div class="pases">
-            <a href="#"
-              ><img
-                src="../assets/img/pases2.jpg"
-                alt="imagen de un hombre sentado descansando con la barra y los discos en el piso"
-                class="pass"
-            /></a>
-            <p>por semana $49</p>
-          </div>
-          <div class="pases">
-            <a href="#"
-              ><img
-                src="../assets/img/pases3.jpg"
-                alt="imagen de un hombre entrenando, mancuernas y cinco leyendas que dicen again"
-                class="pass"
-            /></a>
-            <p>por mes $79</p>
+          <!-- Menú de navegación -->
+          <nav id="navbarMenu" class="d-none d-md-flex">
+            <a href="acerca_de.html" class="text-gold mx-2">Acerca de</a>
+            <a href="membresias.html" class="text-gold mx-2">Membresias</a>
+            <a href="pases.html" class="text-gold mx-2">Pases</a>
+            <a href="contacto.html" class="text-gold mx-2">Contacto</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="card_pases">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <a href="#"><img src="../assets/img/cardpase4.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">DAY PASS</h5>
+            </div>
+            <div class="card-footer">
+              <small class="precio_pases">30USD</small>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-
+        <div class="col">
+          <div class="card h-100">
+            <a href="#"><img src="../assets/img/cardpase2.jpg" class="card-img-top" alt=""></a>
+            
+            <div class="card-body">
+              <h5 class="card-title">WEEK PASS</h5>
+            </div>
+            <div class="card-footer">
+              <small class="precio_pases">99USD</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <a href="#"><img src="../assets/img/cardpase3.jpg" class="card-img-top" alt="..."></a>
+            
+            <div class="card-body">
+              <h5 class="card-title">MONTH PASS</h5>
+            </div>
+            <div class="card-footer">
+              <small class="precio_pases">249USD</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      </main>
     <footer>
       <div class="footer">
         <div class="boxes_footer">
@@ -89,7 +131,7 @@
           </ul>
         </div>
         <div class="boxes_footer">
-          <ul>
+          <ul class="iconos_redes">
             <li>
               <a target="_blank" href="https://www.instagram.com/"
                 ><img
