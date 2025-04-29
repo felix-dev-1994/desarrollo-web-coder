@@ -1,44 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-/*paleta de colores*/
-/*#0D0D0D*/
-/*#734002*/
-/*#A66D03*/
-/*#F2CB05*/
-/*alternativos*/
-/*#011526*/
-/*#012E40*/
-/*#025959*/
-/*#02735E*/
 
-/*encabezado y menu navegable*/
+/* Paleta de colores */
+/* #0D0D0D */
+/* #734002 */
+/* #A66D03 */
+/* #F2CB05 */
+/* Alternativos */
+/* #011526 */
+/* #012E40 */
+/* #025959 */
+/* #02735E */
+
+/* Encabezado y menú navegable */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 html {
   font-size: 62, 5%;
 }
+
+body {
+  background-color: black;
+}
+
 a {
   text-decoration: none;
   color: goldenrod;
 }
+
 ul {
   display: flex;
   width: 100%;
-  margin-top: 0%;
+  margin-top: 0;
   justify-content: flex-end;
   align-items: flex-end;
   padding-right: 4%;
   height: 100%;
 }
+
 li {
   display: flex;
   padding: 10px;
 }
+
 .text-gold:hover {
   color: white;
 }
+
 header {
   display: flex;
   position: fixed;
@@ -51,36 +62,54 @@ header {
   padding: 2.5rem 0;
   align-items: center;
 }
+
 .container-fluid {
   background-color: transparent !important;
 }
+
 .logo {
   width: 100px;
   height: 100px;
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: brightness(1.2);
 }
-/*seccion y cuerpo*/
+
+/* Sección y cuerpo */
 main {
-  padding-top: 0px;
+  padding-top: 0;
   position: relative;
   z-index: 1;
 }
+
 p {
   font-family: "Montserrat", sans-serif;
   color: #e3c75f;
 }
+
 .membresias {
-  margin-top: 200px;
+  margin-top: 20rem;
 }
+
 .clasica_flex {
   display: flex;
   align-items: center;
   margin: 10rem;
 }
+
 .titulos_membresias {
   font-size: 3rem;
   color: #cc8d1a;
   margin-right: 15rem;
 }
+
+.title_membresiasypases {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
 .boton_membresia {
   width: 100px;
   height: 50px;
@@ -89,39 +118,53 @@ p {
   color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .boton_membresia:hover {
   background-color: white;
   color: black;
 }
+
 h1 {
+  font-size: 3rem;
+  color: #cc8d1a;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #444;
+  margin-bottom: 1rem;
+  min-height: 37rem;
+}
+
+.titulo-de-tarjeta {
+  font-size: 1.25rem;
+}
+
+.card-body {
+  background-color: goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 5rem;
+}
+
+.card-text {
+  color: black;
+  border-radius: 12rem;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.card-title {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
-  color: #cc8d1a;
+  color: black;
   text-align: center;
   padding: 5rem;
 }
 
-.titulo_ {
-  font-size: 3rem;
-}
-
-.card {
-  border: #444 solid;
-  margin-bottom: 5rem;
-  min-height: 37rem;
-}
-.titulo-de-tarjeta {
-  font-size: 1.25rem;
-}
-.card-body {
-  background-color: goldenrod;
-}
-.card-text {
-  color: black;
-  border-radius: 12rem;
-  margin: 0 1rem 0 1rem;
-  text-align: center;
-}
 .boton-inscripcion {
   display: flex;
   justify-content: center;
@@ -132,30 +175,38 @@ h1 {
   width: 150px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .boton-inscripcion:hover {
   background-color: white;
   color: black;
 }
+
 .presentacion {
   display: flex;
-  margin-top: 10vh;
+  margin-bottom: 5rem;
 }
+
 .titulo_presentacion {
+  width: 100%;
   display: flex;
-  margin-left: 25vh;
+  justify-content: flex-start;
+  margin: 5rem 0 0 10rem;
 }
+
 .texto_presentacion {
   display: flex;
   padding: 5rem;
-  margin-left: 20vh;
+  margin-left: 2rem;
   text-align: left;
 }
+
+/* Equipamiento */
 .container_box_principal_equipamiento {
   display: flex;
   gap: 20px;
   padding: 20px;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .box_principal_equipamiento {
@@ -207,19 +258,13 @@ h1 {
 .text_piso_equipamiento button:hover {
   background-color: white;
 }
+
+/* Pases */
 .card_pases {
   margin: 200px 20px 50px 20px;
   overflow: hidden;
 }
 
-.card-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  height: 0;
-}
 .precio_pases {
   display: flex;
   align-items: center;
@@ -227,34 +272,46 @@ h1 {
   font-size: medium;
   color: black;
 }
+
+/* Contacto */
 .box_contacto {
-  margin-top: 150px;
+  margin-top: 15rem;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-end;
 }
+
 .contacto {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   color: #cc8d1a;
-  margin: 0 10rem 0rem 0rem;
+  margin-right: 10rem;
 }
+
+.title-contacto {
+  margin: 2rem;
+}
+
 .contacto ul {
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
 }
+
 .separador {
   width: 90%;
   height: 2px;
   background: #444;
-  margin: 40px 0;
-  border-radius: 10px;
+  margin: 4rem auto;
+  border-radius: 1rem;
 }
+
+/* Formulario */
 .formulario {
   width: 100%;
   background: #f2cb05;
@@ -264,6 +321,7 @@ h1 {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .formulario label {
   display: block;
   margin-bottom: 8px;
@@ -271,6 +329,7 @@ h1 {
   font-size: 15px;
   color: black;
 }
+
 .formulario input,
 .formulario textarea {
   width: 100%;
@@ -297,14 +356,13 @@ h1 {
   background-color: white;
   color: black;
 }
-body {
-  background-color: black;
-}
-/*pie de pagina*/
+
+/* Pie de página */
 footer {
   border-top: 2px solid #444;
   background-color: #1a1a1a;
 }
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -313,72 +371,71 @@ footer {
   padding: 1.5rem 1rem;
   align-items: flex-end;
 }
+
 footer a {
   color: #ccc;
   transition: color 0.3s ease;
 }
+
 footer a:hover {
   color: #fff;
 }
-.logo {
-  max-width: 120px;
-  width: 100px;
-  height: auto;
-  margin-bottom: 1rem;
-  filter: brightness(1.2);
-}
+
 .boxes_footer {
   flex: 1 1 250px;
   min-width: 200px;
   flex-wrap: wrap;
 }
+
 .politica_terminos,
 .redes_footer {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .politica_terminos {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 0.5rem; /* espacio entre enlaces */
+  gap: 0.5rem;
 }
+
 .politica_term_cont a {
   text-decoration: none;
   color: #ccc;
   transition: color 0.3s ease;
 }
+
 .politica_term_cont a:hover {
   color: #fff;
 }
-.iconos_redes{
+
+.iconos_redes {
   display: flex;
   justify-content: flex-end;
 }
+
 .redes {
   width: 40px;
   height: 40px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
-.redes:hover {
-  transform: scale(1.2);
-  filter: brightness(1.4);
-}
+
+.redes:hover,
 .img_whatsapp:hover {
   transform: scale(1.2);
   filter: brightness(1.4);
 }
-/* Estilo del botón hamburguesa */
+
+/* Botón hamburguesa */
 .navbar-toggler {
   background-color: transparent;
   border: none;
   padding: 0.5rem 1rem;
   margin-left: auto;
 }
+
 .navbar-toggler-icon {
   width: 30px;
   height: 3px;
@@ -386,6 +443,7 @@ footer a:hover {
   display: block;
   position: relative;
 }
+
 .navbar-toggler-icon::before,
 .navbar-toggler-icon::after {
   position: absolute;
@@ -394,32 +452,40 @@ footer a:hover {
   background-color: goldenrod;
   left: 0;
 }
+
 .navbar-toggler-icon::before {
   top: -8px;
 }
+
 .navbar-toggler-icon::after {
   top: 8px;
 }
 
+/* Media queries */
 @media (max-width: 576px) {
   header {
     margin-top: 0;
   }
+
   main {
-    padding-top: 160px;
+    padding-top: 15rem;
   }
+
   nav a {
     display: block;
     margin: 0.5rem 0;
   }
-  ul {
+
+  ul,
+  li {
     margin: 0;
     padding: 0;
-
   }
+
   li {
     margin: 0 15px;
   }
+  
   .presentacion {
     font-size: 1rem;
     display: flex;
@@ -430,6 +496,7 @@ footer a:hover {
     height: auto;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0;
   }
   .titulo_presentacion,
   .texto_presentacion {
@@ -439,21 +506,27 @@ footer a:hover {
     text-align: center;
     margin-left: 1rem;
   }
-  .titulo_ {
-    display: flex;
-    flex-direction: column;
+
+  .hogar_de_los_campeones{
+    justify-content: center;
   }
+
   .logo {
     margin-top: 2rem;
     padding-top: 15px;
   }
-  
+
   .card {
     width: 90% !important;
     margin: 0 auto 2rem auto;
   }
-  .card_pases{
-    margin-top: 2rem;
+
+  .card_pases {
+    margin-top: 4rem;
+  }
+
+  .card-title{
+    margin-top: 0.5rem;
   }
   .container_box_principal_equipamiento {
     display: flex;
@@ -461,10 +534,12 @@ footer a:hover {
     align-items: center;
     margin: 0.1rem 1rem;
   }
+
   .box_principal_equipamiento {
     width: 100%;
     margin-bottom: 0.5rem;
   }
+
   .membresias,
   .clasica_flex,
   .titulos_membresias {
@@ -474,68 +549,54 @@ footer a:hover {
     display: block;
     text-align: center;
   }
+
   .clasica_flex p {
-    margin: 1rem 1rem;
+    margin: 1rem;
   }
+
   .box_contacto {
     margin-top: 0;
   }
+
   .contacto {
     margin: 0 0 3rem 0;
     display: flex;
     flex-direction: column;
   }
+
   iframe {
     width: 100%;
     height: 50%;
   }
+
   .formulario {
     width: 90%;
   }
+
   .footer {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1rem;
-    padding: 1.5rem 1rem;
   }
 
   .redes {
     width: 40px;
     height: 40px;
   }
-  .iconos_redes{
-    display: flex;
+
+  .iconos_redes {
     justify-content: space-between;
   }
 }
 
 @media (max-width: 768px) {
   #navbarMenu {
-    background-color: rgba(0, 0, 0, 0.95);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-    gap: 1rem;
-  }
-
-  #navbarMenu a {
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-  }
-
-  #navbarMenu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
     background-color: rgba(13, 13, 13, 0.95);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
@@ -553,3 +614,4 @@ footer a:hover {
     color: white;
   }
 }
+
