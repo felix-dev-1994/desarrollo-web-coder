@@ -1,0 +1,23 @@
+{
+  "name": "proyecto_desarrollo_web",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/felix-dev-1994/desarrollo-web-coder#readme",
+  "bugs": {
+    "url": "https://github.com/felix-dev-1994/desarrollo-web-coder/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felix-dev-1994/desarrollo-web-coder.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/styles.scss:style/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.87.0"
+  }
+}

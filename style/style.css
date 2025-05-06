@@ -1,17 +1,5 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
-/* Paleta de colores */
-/* #0D0D0D */
-/* #734002 */
-/* #A66D03 */
-/* #F2CB05 */
-/* Alternativos */
-/* #011526 */
-/* #012E40 */
-/* #025959 */
-/* #02735E */
-
-/* Encabezado y menú navegable */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -22,19 +10,18 @@ html {
   font-size: 62, 5%;
 }
 
-body {
-  background-color: black;
-}
-
 a {
   text-decoration: none;
-  color: goldenrod;
+  color: gold;
+}
+a:hover {
+  color: white;
+  transition: color 0.3s ease;
 }
 
 ul {
   display: flex;
   width: 100%;
-  margin-top: 0;
   justify-content: flex-end;
   align-items: flex-end;
   padding-right: 4%;
@@ -46,8 +33,265 @@ li {
   padding: 10px;
 }
 
-.text-gold:hover {
+body {
+  background-color: black;
+}
+
+main {
+  padding-top: 0;
+  position: relative;
+  z-index: 1;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: gold;
+}
+
+.membresias {
+  padding-top: 0;
+  margin-top: 20rem;
+  position: relative;
+  z-index: 1;
+}
+
+.clasica_flex {
+  display: flex;
+  align-items: flex-start;
+  margin: 10rem;
+}
+
+.titulos_membresias {
+  font-size: 3rem;
+  color: gold;
+  margin-right: 15rem;
+  text-align: center;
+}
+
+.title_membresiasypases {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  color: gold;
+}
+
+h1 {
+  font-size: 3rem;
+  color: gold;
+  text-align: center;
+}
+
+.presentacion {
+  display: flex;
+}
+
+.titulo_presentacion {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5rem 0 0 10rem;
+}
+
+.texto_presentacion {
+  display: flex;
+  padding: 5rem;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.boton_membresia {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+  border: 4px solid gold;
+  background-color: black;
+  color: gold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton_membresia:hover {
+  background-color: gold;
+  color: black;
+}
+
+.boton-inscripcion {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 15px;
+  width: 150px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-inscripcion:hover {
+  background-color: gold;
+  color: black;
+}
+
+.text_piso_equipamiento, button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: gold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 14px;
+  background-color: black;
+  color: gold;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: gold;
+  color: black;
+}
+
+/* Botón hamburguesa */
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: auto;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: gold;
+  display: block;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: gold;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+.card {
+  border: 4px solid gold;
+  margin-bottom: 1rem;
+  min-height: 37rem;
+  box-shadow: 5px 5px 5px gold;
+}
+
+.titulo-de-tarjeta {
+  font-size: 1.25rem;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.card-body {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 5rem;
+}
+
+.card-text {
+  color: black;
+  border-radius: 12rem;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  padding: 5rem;
+}
+
+.card-footer {
+  background-color: rgba(13, 13, 13, 0.6);
+}
+
+.container_box_principal_equipamiento {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.box_principal_equipamiento {
+  position: relative;
+  width: 45%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px gold;
+}
+
+.box_principal_equipamiento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.text_piso_equipamiento {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.text_piso_equipamiento, h2 {
+  margin: 0 0 10rem;
+  font-size: 24px;
+}
+
+.card_pases {
+  margin: 200px 30px 50px;
+}
+
+.precio_pases {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  color: black;
 }
 
 header {
@@ -76,206 +320,8 @@ header {
   filter: brightness(1.2);
 }
 
-/* Sección y cuerpo */
-main {
-  padding-top: 0;
-  position: relative;
-  z-index: 1;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  color: #e3c75f;
-}
-
-.membresias {
-  margin-top: 20rem;
-}
-
-.clasica_flex {
-  display: flex;
-  align-items: center;
-  margin: 10rem;
-}
-
-.titulos_membresias {
-  font-size: 3rem;
-  color: #cc8d1a;
-  margin-right: 15rem;
-}
-
-.title_membresiasypases {
-  width: 100%;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.boton_membresia {
-  width: 100px;
-  height: 50px;
-  border-radius: 15px;
-  background-color: black;
-  color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.boton_membresia:hover {
-  background-color: white;
-  color: black;
-}
-
-h1 {
-  font-size: 3rem;
-  color: #cc8d1a;
-  text-align: center;
-}
-
-.card {
-  border: 1px solid #444;
-  margin-bottom: 1rem;
-  min-height: 37rem;
-}
-
-.titulo-de-tarjeta {
-  font-size: 1.25rem;
-}
-
-.card-body {
-  background-color: goldenrod;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  height: 5rem;
-}
-
-.card-text {
-  color: black;
-  border-radius: 12rem;
-  margin: 0 1rem;
-  text-align: center;
-}
-
-.card-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 2rem;
-  color: black;
-  text-align: center;
-  padding: 5rem;
-}
-
-.boton-inscripcion {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  background-color: black;
-  padding: 0.5rem;
-  border-radius: 15px;
-  width: 150px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.boton-inscripcion:hover {
-  background-color: white;
-  color: black;
-}
-
-.presentacion {
-  display: flex;
-  margin-bottom: 5rem;
-}
-
-.titulo_presentacion {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  margin: 5rem 0 0 10rem;
-}
-
-.texto_presentacion {
-  display: flex;
-  padding: 5rem;
-  margin-left: 2rem;
-  text-align: left;
-}
-
-/* Equipamiento */
-.container_box_principal_equipamiento {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  justify-content: center;
-  margin-bottom: 4rem;
-}
-
-.box_principal_equipamiento {
-  position: relative;
-  width: 45%;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.box_principal_equipamiento img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.text_piso_equipamiento {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-}
-
-.text_piso_equipamiento h2 {
-  margin: 0 0 10rem;
-  font-size: 24px;
-}
-
-.text_piso_equipamiento button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #a66d03;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  color: black;
-}
-
-.text_piso_equipamiento button:hover {
-  background-color: white;
-}
-
-/* Pases */
-.card_pases {
-  margin: 200px 20px 50px 20px;
-  overflow: hidden;
-}
-
-.precio_pases {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: medium;
-  color: black;
-}
-
-/* Contacto */
 .box_contacto {
-  margin-top: 15rem;
+  margin-top: 11rem;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -287,7 +333,7 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  color: #cc8d1a;
+  color: gold;
   margin-right: 10rem;
 }
 
@@ -296,6 +342,7 @@ h1 {
 }
 
 .contacto ul {
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -306,23 +353,23 @@ h1 {
 .separador {
   width: 90%;
   height: 2px;
-  background: #444;
+  background: gold;
   margin: 4rem auto;
   border-radius: 1rem;
 }
 
-/* Formulario */
 .formulario {
   width: 100%;
-  background: #f2cb05;
+  background: white;
   padding: 30px;
   max-width: 500px;
   margin: 2rem auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px gold;
 }
 
 .formulario label {
+  font-family: "Montserrat", sans-serif;
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
@@ -335,32 +382,14 @@ h1 {
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 8px;
   font-size: 16px;
 }
 
-.formulario button {
-  width: 100%;
-  padding: 14px;
-  background-color: black;
-  color: white;
-  font-size: 18px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.formulario button:hover {
-  background-color: white;
-  color: black;
-}
-
-/* Pie de página */
 footer {
-  border-top: 2px solid #444;
-  background-color: #1a1a1a;
+  border-top: 4px solid gold;
+  background-color: rgba(13, 13, 13, 0.6);
 }
 
 .footer {
@@ -373,12 +402,12 @@ footer {
 }
 
 footer a {
-  color: #ccc;
-  transition: color 0.3s ease;
+  color: gold;
 }
 
 footer a:hover {
-  color: #fff;
+  color: white;
+  transition: color 0.3s ease;
 }
 
 .boxes_footer {
@@ -395,20 +424,16 @@ footer a:hover {
 }
 
 .politica_terminos {
+  gap: 0.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .politica_term_cont a {
   text-decoration: none;
-  color: #ccc;
+  color: gold;
   transition: color 0.3s ease;
-}
-
-.politica_term_cont a:hover {
-  color: #fff;
 }
 
 .iconos_redes {
@@ -419,73 +444,50 @@ footer a:hover {
 .redes {
   width: 40px;
   height: 40px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: filter 0.3s ease;
 }
 
 .redes:hover,
 .img_whatsapp:hover {
   transform: scale(1.2);
-  filter: brightness(1.4);
+  filter: brightness(1.3);
 }
 
-/* Botón hamburguesa */
-.navbar-toggler {
-  background-color: transparent;
-  border: none;
-  padding: 0.5rem 1rem;
-  margin-left: auto;
+.img_whatsapp {
+  filter: brightness(1);
 }
 
-.navbar-toggler-icon {
-  width: 30px;
-  height: 3px;
-  background-color: goldenrod;
-  display: block;
-  position: relative;
+.filtro_footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
 }
 
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  background-color: goldenrod;
-  left: 0;
-}
-
-.navbar-toggler-icon::before {
-  top: -8px;
-}
-
-.navbar-toggler-icon::after {
-  top: 8px;
-}
-
-/* Media queries */
+/* Media Queries */
 @media (max-width: 576px) {
   header {
     margin-top: 0;
   }
-
   main {
+    margin-top: -3.5rem;
     padding-top: 15rem;
   }
-
   nav a {
     display: block;
     margin: 0.5rem 0;
   }
-
   ul,
   li {
     margin: 0;
     padding: 0;
   }
-
   li {
     margin: 0 15px;
   }
-  
   .presentacion {
     font-size: 1rem;
     display: flex;
@@ -506,26 +508,21 @@ footer a:hover {
     text-align: center;
     margin-left: 1rem;
   }
-
-  .hogar_de_los_campeones{
+  .hogar_de_los_campeones {
     justify-content: center;
   }
-
   .logo {
     margin-top: 2rem;
     padding-top: 15px;
   }
-
   .card {
     width: 90% !important;
     margin: 0 auto 2rem auto;
   }
-
   .card_pases {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
-
-  .card-title{
+  .card-title {
     margin-top: 0.5rem;
   }
   .container_box_principal_equipamiento {
@@ -534,62 +531,55 @@ footer a:hover {
     align-items: center;
     margin: 0.1rem 1rem;
   }
-
   .box_principal_equipamiento {
     width: 100%;
     margin-bottom: 0.5rem;
   }
-
+  .boton_membresia {
+    display: inline-flex;
+  }
   .membresias,
   .clasica_flex,
   .titulos_membresias {
-    margin: 0 0 1rem 0;
+    margin: 5rem 0 1rem 0;
     width: 100%;
     overflow: hidden;
     display: block;
     text-align: center;
   }
-
   .clasica_flex p {
     margin: 1rem;
   }
-
   .box_contacto {
     margin-top: 0;
   }
-
   .contacto {
     margin: 0 0 3rem 0;
     display: flex;
     flex-direction: column;
   }
-
   iframe {
     width: 100%;
     height: 50%;
   }
-
   .formulario {
     width: 90%;
   }
-
   .footer {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-
   .redes {
     width: 40px;
     height: 40px;
   }
-
   .iconos_redes {
     justify-content: space-between;
   }
 }
-
 @media (max-width: 768px) {
   #navbarMenu {
     background-color: rgba(13, 13, 13, 0.95);
@@ -597,21 +587,21 @@ footer a:hover {
     top: 100%;
     right: 0;
     width: 100%;
+    background-color: rgba(13, 13, 13, 0.95);
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
     gap: 1rem;
     z-index: 9998;
   }
-
   #navbarMenu a {
     font-size: 1rem;
-    color: goldenrod;
+    color: gold;
     padding: 0.5rem 1rem;
   }
-
   #navbarMenu a:hover {
     color: white;
   }
 }
 
+/*# sourceMappingURL=style.css.map */

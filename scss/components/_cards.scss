@@ -1,0 +1,113 @@
+$primary-color: black;
+$secondary-color: gold;
+$tertiary-color: rgba(13, 13, 13, 0.6);
+$hover-color: white;
+$text-color: gold;
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-raleway: 'Raleway', sans-serif;
+$font-size-base: 16px;
+$font-size-heading: 3rem;
+$card-border: 4px solid $secondary-color;
+$card-box-shadow: 5px 5px 5px $secondary-color;
+$button-padding: 10px 20px;
+$button-radius: 15px;
+$button-border: 4px solid $secondary-color;
+$button-transition: background-color 0.3s ease, color 0.3s ease;
+
+.card {
+    border: $card-border;
+    margin-bottom: 1rem;
+    min-height: 37rem;
+    box-shadow: $card-box-shadow;
+  }
+  
+  .titulo-de-tarjeta {
+    font-size: 1.25rem;
+    color: $primary-color;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card-body {
+    background-color: $hover-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+  }
+  
+  .card-text {
+    color: $primary-color;
+    border-radius: 12rem;
+    margin: 0 1rem;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-family: $font-family-montserrat;
+    font-size: 2rem;
+    color: $primary-color;
+    text-align: center;
+    padding: 5rem;
+  }
+  .card-footer {
+    background-color: $tertiary-color;
+  }
+  // Equipamiento
+.container_box_principal_equipamiento {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.box_principal_equipamiento {
+  position: relative;
+  width: 45%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: $card-box-shadow;
+}
+
+.box_principal_equipamiento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.text_piso_equipamiento {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: $hover-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+  .text_piso_equipamiento, h2 {
+    margin: 0 0 10rem;
+    font-size: 24px;
+  }
+  .card_pases {
+    margin: 200px 30px 50px;
+  }
+  .precio_pases {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    color: $primary-color;
+  }

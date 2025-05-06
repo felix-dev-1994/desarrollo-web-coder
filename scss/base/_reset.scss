@@ -1,0 +1,118 @@
+$primary-color: black;
+$secondary-color: gold;
+$tertiary-color: rgba(13, 13, 13, 0.6);
+$hover-color: white;
+$text-color: gold;
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-raleway: 'Raleway', sans-serif;
+$font-size-base: 16px;
+$font-size-heading: 3rem;
+$card-border: 4px solid $secondary-color;
+$card-box-shadow: 5px 5px 5px $secondary-color;
+$button-padding: 10px 20px;
+$button-radius: 15px;
+$button-border: 4px solid $secondary-color;
+$button-transition: background-color 0.3s ease, color 0.3s ease;
+
+@mixin transition($property, $duration) {
+  transition: $property $duration ease;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary-color;
+
+  &:hover {
+    color: $hover-color;
+    @include transition(color, 0.3s);
+  }
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 4%;
+  height: 100%;
+}
+
+li {
+  display: flex;
+  padding: 10px;
+}
+
+body {
+  background-color: $primary-color;
+}
+main {
+  padding-top: 0;
+  position: relative;
+  z-index: 1;
+}
+
+p {
+  font-family: $font-family-montserrat;
+  color: $text-color;
+}
+
+// Membresías
+.membresias {
+  padding-top: 0;
+  margin-top: 20rem;
+  position: relative;
+  z-index: 1;
+}
+
+.clasica_flex {
+  display: flex;
+  align-items: flex-start;
+  margin: 10rem;
+}
+
+.titulos_membresias {
+  font-size: 3rem;
+  color: $text-color;
+  margin-right: 15rem;
+  text-align: center;
+}
+
+.title_membresiasypases {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  color: $text-color;
+}
+
+h1 {
+  font-size: $font-size-heading;
+  color: $text-color;
+  text-align: center;
+}
+.presentacion {
+  display: flex;
+}
+
+.titulo_presentacion {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5rem 0 0 10rem;
+}
+
+.texto_presentacion {
+  display: flex;
+  padding: 5rem;
+  margin-left: 2rem;
+  text-align: left;
+}

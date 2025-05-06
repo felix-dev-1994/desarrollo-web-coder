@@ -1,0 +1,17 @@
+@mixin transition($property, $duration) {
+    transition: $property $duration ease;
+}
+
+@mixin button-style($background, $color) {
+    background-color: $background;
+    color: $color;
+    border: none;
+    padding: $button-padding;
+    border-radius: $button-radius;
+    cursor: pointer;
+    @include transition(background-color, 0.3s);
+
+    &:hover {
+    background-color: darken($background, 10%);
+    }
+}
