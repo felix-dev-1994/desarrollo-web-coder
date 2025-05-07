@@ -64,6 +64,7 @@ $button-transition: background-color 0.3s ease, color 0.3s ease;
   .boton-inscripcion:hover {
     background-color: $secondary-color;
     color: $primary-color;
+    transition: 0.3s;
   }
   .text_piso_equipamiento, button {
     padding: 10px 20px;
@@ -124,4 +125,5 @@ $button-transition: background-color 0.3s ease, color 0.3s ease;
 .navbar-toggler-icon::after {
   top: 8px;
 }
+  
   

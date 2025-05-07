@@ -131,6 +131,7 @@ h1 {
 .boton-inscripcion:hover {
   background-color: gold;
   color: black;
+  transition: 0.3s;
 }
 
 .text_piso_equipamiento, button {
@@ -452,6 +453,7 @@ footer a:hover {
 .img_whatsapp:hover {
   transform: scale(1.2);
   filter: brightness(1.3);
+  transition: 0.3s;
 }
 
 .img_whatsapp {

@@ -6,6 +6,7 @@
     <title>Membresías</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   </head>
   <body>
     <!-- Header / Navbar (fluido) -->
@@ -34,9 +35,9 @@
       <div>
         <div class="clasica_flex">
           <div>
-            <h1 class="titulos_membresias">Membresía Clásica</h1>
+            <h1 class="titulos_membresias" data-aos="fade-right" data-aos-duration="1000">Membresía Clásica</h1>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1000">
             <p>
               $124.99/MES + $99 DE INSCRIPCIÓN. Contrato de 12 meses. La membresía
               es para un adulto mayor de 18 años. Se renueva automáticamente a
@@ -55,8 +56,8 @@
         <div class="separador"></div>
 
         <div class="clasica_flex">
-          <h2 class="titulos_membresias">Membresía Flexible</h2>
-          <div>
+          <h2 class="titulos_membresias" data-aos="fade-right" data-aos-duration="1000">Membresía Flexible</h2>
+          <div data-aos="fade-left" data-aos-duration="1000">
             <p>
               $149.99/MES + $99 DE INSCRIPCIÓN. Contrato mensual. Membresía para un
               adulto mayor de 18 años con pago por uso. Se renueva automáticamente
@@ -75,11 +76,7 @@
     <footer>
       <div class="footer">
         <div class="boxes_footer">
-          <img
-            src="../assets/img/goldsgymlogo.png"
-            alt="Logotipo de Gold's Gym en amarillo y negro"
-            class="logo"
-          />
+          <img src="../assets/img/goldsgymlogo.png" alt="Logotipo de Gold's Gym en amarillo y negro" class="logo" />
           <p>© Copyright 2025</p>
         </div>
         <div class="boxes_footer">
@@ -99,29 +96,17 @@
           <ul class="iconos_redes">
             <li>
               <a target="_blank" href="https://www.instagram.com/">
-                <img
-                  src="../assets/img/instagram.png"
-                  alt="Icono de Instagram"
-                  class="redes"
-                />
+                <img src="../assets/img/instagram.png" alt="Icono de Instagram" class="redes" />
               </a>
             </li>
             <li>
               <a target="_blank" href="https://www.facebook.com/">
-                <img
-                  src="../assets/img/facebook.png"
-                  alt="Icono de Facebook"
-                  class="redes"
-                />
+                <img src="../assets/img/facebook.png" alt="Icono de Facebook" class="redes" />
               </a>
             </li>
             <li>
               <a target="_blank" href="https://web.whatsapp.com/">
-                <img
-                  src="../assets/img/whatsapp.png"
-                  alt="Icono de WhatsApp"
-                  class="redes"
-                />
+                <img src="../assets/img/whatsapp.png" alt="Icono de WhatsApp" class="redes" />
               </a>
             </li>
           </ul>
@@ -140,5 +125,11 @@
         menu.classList.toggle("flex-column");
       });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
+

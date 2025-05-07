@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   </head>
 
   <body>
@@ -67,7 +68,7 @@
 
       <section>
         <div class="container_box_principal_equipamiento">
-          <div class="box_principal_equipamiento">
+          <div class="box_principal_equipamiento" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <img src="../assets/img/card1.jpg" alt="piso principal del gimnasio, en donde se muestran distintos tipos de maquinas, mancuernas y una bolsa de box" />
             <div class="text_piso_equipamiento">
               <h2>PISO PRINCIPAL</h2>
@@ -75,7 +76,7 @@
             </div>
           </div>
 
-          <div class="box_principal_equipamiento">
+          <div class="box_principal_equipamiento" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <img src="../assets/img/card22.jpg" alt="foto de muy cerca a un conjunto de mancuernas color negro y cromado plateado" />
             <div class="text_piso_equipamiento">
               <h2>EQUIPAMIENTO</h2>
@@ -160,6 +161,11 @@
         menu.classList.toggle("d-flex");
         menu.classList.toggle("flex-column");
       });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
