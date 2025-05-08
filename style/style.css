@@ -509,6 +509,7 @@ footer a:hover {
     text-transform: uppercase;
     text-align: center;
     margin-left: 1rem;
+    padding: 40px;
   }
   .hogar_de_los_campeones {
     justify-content: center;
@@ -573,6 +574,9 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .boxes_footer {
+    flex: 110px;
   }
   .redes {
     width: 40px;
