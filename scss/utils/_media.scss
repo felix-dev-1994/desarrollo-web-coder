@@ -1,3 +1,7 @@
+$secondary-color: gold;
+$tertiary-color: rgba(13, 13, 13, 0.6);
+$hover-color: white;
+
 /* Media Queries */
 @media (max-width: 576px) {
   header {
@@ -129,12 +133,12 @@
 
 @media (max-width: 768px) {
   #navbarMenu {
-    background-color: rgba(13, 13, 13, 0.95);
+    background-color: $tertiary-color;
     position: absolute;
     top: 100%;
     right: 0;
     width: 100%;
-    background-color: rgba(13, 13, 13, 0.95);
+    background-color: $tertiary-color;
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
@@ -144,12 +148,12 @@
 
   #navbarMenu a {
     font-size: 1rem;
-    color: gold;
+    color: $secondary-color;
     padding: 0.5rem 1rem;
   }
 
   #navbarMenu a:hover {
-    color: white;
+    color: $hover-color;
   }
 }
 
