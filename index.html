@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gold's Gym</title>
+    <link rel="icon" type="image/png" href="./assets/img/goldsgymlogo.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,16 +12,25 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- Header / Navbar -->
     <header>
       <div class="container-fluid bg-dark text-white py-3">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
           <a href="index.html">
             <img
-              class="logo"
+              class="logo animate__animated animate__pulse"
               src="./assets/img/goldsgymlogo.png"
               alt="logotipo de hombre levantando pesas gold's gym en color amarillo y negro"
             />
@@ -34,20 +44,42 @@
             aria-label="Abrir menú"
           >
             <span
-              style="display:block; width:25px; height:3px; background:#F2CB05; margin:5px 0;"
+              style="
+                display: block;
+                width: 25px;
+                height: 3px;
+                background: #f2cb05;
+                margin: 5px 0;
+              "
             ></span>
             <span
-              style="display:block; width:25px; height:3px; background:#F2CB05; margin:5px 0;"
+              style="
+                display: block;
+                width: 25px;
+                height: 3px;
+                background: #f2cb05;
+                margin: 5px 0;
+              "
             ></span>
             <span
-              style="display:block; width:25px; height:3px; background:#F2CB05; margin:5px 0;"
+              style="
+                display: block;
+                width: 25px;
+                height: 3px;
+                background: #f2cb05;
+                margin: 5px 0;
+              "
             ></span>
           </button>
 
           <!-- Menú de navegación -->
           <nav id="navbarMenu" class="d-none d-md-flex">
-            <a href="./pages/acerca_de.html" class="text-gold mx-2">Acerca de</a>
-            <a href="./pages/membresias.html" class="text-gold mx-2">Membresias</a>
+            <a href="./pages/acerca_de.html" class="text-gold mx-2"
+              >Acerca de</a
+            >
+            <a href="./pages/membresias.html" class="text-gold mx-2"
+              >Membresias</a
+            >
             <a href="./pages/pases.html" class="text-gold mx-2">Pases</a>
             <a href="./pages/contacto.html" class="text-gold mx-2">Contacto</a>
           </nav>
@@ -58,7 +90,13 @@
     <!-- Video de fondo -->
     <main>
       <div class="container-fluid p-0 position-relative">
-        <video autoplay muted loop class="w-100 h-100" style="object-fit: cover; height: 100vh;">
+        <video
+          autoplay
+          muted
+          loop
+          class="w-100 h-100"
+          style="object-fit: cover; height: 100vh"
+        >
           <source src="./assets/videos/videodeinicio.mp4" type="video/mp4" />
         </video>
       </div>
@@ -72,7 +110,12 @@
       <div class="container py-5">
         <div class="row justify-content-center">
           <div class="col-md-6 col-lg-5 mb-4">
-            <div class="card" style="width: 100%;" data-aos="zoom-in" data-aos-duration="1000">
+            <div
+              class="card"
+              style="width: 100%"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <img
                 src="./assets/img/coach2.jpg"
                 class="img-card"
@@ -81,17 +124,25 @@
               <div class="card-body d-flex flex-column">
                 <h2 class="titulo-de-tarjeta">Membresías</h2>
                 <p class="card-text">
-                  Nuestras membresías te brindan acceso exclusivo a un mundo de oportunidades de fitness.
-                  Tanto si eres un profesional experimentado como si apenas estás comenzando tu camino hacia el fitness,
-                  tenemos la opción de membresía perfecta para ti.
+                  Nuestras membresías te brindan acceso exclusivo a un mundo de
+                  oportunidades de fitness. Tanto si eres un profesional
+                  experimentado como si apenas estás comenzando tu camino hacia
+                  el fitness, tenemos la opción de membresía perfecta para ti.
                 </p>
-                <a href="./pages/membresias.html" class="boton-inscripcion">¡Empieza ahora!</a>
+                <a href="./pages/membresias.html" class="boton-inscripcion"
+                  >¡Empieza ahora!</a
+                >
               </div>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-5 mb-4">
-            <div class="card" style="width: 100%;" data-aos="zoom-in" data-aos-duration="1000">
+            <div
+              class="card"
+              style="width: 100%"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <img
                 src="./assets/img/coach3.jpg"
                 class="img-card"
@@ -100,11 +151,15 @@
               <div class="card-body d-flex flex-column">
                 <h2 class="titulo-de-tarjeta">Pases</h2>
                 <p class="card-text">
-                  Ya sea que esté de visita en la ciudad o simplemente quiera probar nuestras instalaciones,
-                  nuestros pases le ofrecen una muestra de Gold's Gym. Elija entre nuestros pases de un día,
-                  una semana o un mes y acceda a nuestro equipo de vanguardia y a nuestra acogedora comunidad.
+                  Ya sea que esté de visita en la ciudad o simplemente quiera
+                  probar nuestras instalaciones, nuestros pases le ofrecen una
+                  muestra de Gold's Gym. Elija entre nuestros pases de un día,
+                  una semana o un mes y acceda a nuestro equipo de vanguardia y
+                  a nuestra acogedora comunidad.
                 </p>
-                <a href="./pages/pases.html" class="boton-inscripcion">¡Empieza ahora!</a>
+                <a href="./pages/pases.html" class="boton-inscripcion"
+                  >¡Empieza ahora!</a
+                >
               </div>
             </div>
           </div>
@@ -116,11 +171,13 @@
     <footer>
       <div class="footer">
         <div class="boxes_footer">
-          <img
-            src="./assets/img/goldsgymlogo.png"
-            alt="logotipo de hombre levantando pesas gold's gym en color amarillo y negro"
-            class="logo"
-          />
+          <a href="index.html">
+            <img
+              class="logo"
+              src="./assets/img/goldsgymlogo.png"
+              alt="logotipo de hombre levantando pesas gold's gym en color amarillo y negro"
+            />
+          </a>
           <p>© Copyright 2025</p>
         </div>
 
@@ -142,17 +199,29 @@
           <ul class="iconos_redes">
             <li>
               <a target="_blank" href="https://www.instagram.com/">
-                <img src="./assets/img/instagram.png" alt="ícono de Instagram" class="redes" />
+                <img
+                  src="./assets/img/instagram.png"
+                  alt="ícono de Instagram"
+                  class="redes"
+                />
               </a>
             </li>
             <li>
               <a target="_blank" href="https://www.facebook.com/">
-                <img src="./assets/img/facebook.png" alt="ícono de Facebook" class="redes" />
+                <img
+                  src="./assets/img/facebook.png"
+                  alt="ícono de Facebook"
+                  class="redes"
+                />
               </a>
             </li>
             <li>
               <a target="_blank" href="https://web.whatsapp.com/">
-                <img src="./assets/img/whatsapp.png" alt="ícono de WhatsApp" class="redes" />
+                <img
+                  src="./assets/img/whatsapp.png"
+                  alt="ícono de WhatsApp"
+                  class="redes"
+                />
               </a>
             </li>
           </ul>
@@ -184,4 +253,3 @@
     </script>
   </body>
 </html>
-
