@@ -10,15 +10,6 @@ html {
   font-size: 100%;
 }
 
-a {
-  text-decoration: none;
-  color: gold;
-}
-a:hover {
-  color: white;
-  transition: color 0.3s ease;
-}
-
 ul {
   display: flex;
   width: 100%;
@@ -33,19 +24,10 @@ li {
   padding: 10px;
 }
 
-body {
-  background-color: black;
-}
-
 main {
   padding-top: 0;
   position: relative;
   z-index: 1;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  color: gold;
 }
 
 .membresias {
@@ -63,7 +45,6 @@ p {
 
 .titulos_membresias {
   font-size: 3rem;
-  color: gold;
   margin-right: 15rem;
   text-align: center;
 }
@@ -72,12 +53,10 @@ p {
   width: 100%;
   text-align: center;
   margin-top: 1rem;
-  color: gold;
 }
 
 h1 {
   font-size: 3rem;
-  color: gold;
   text-align: center;
 }
 
@@ -106,22 +85,13 @@ h1 {
   width: 100px;
   height: 50px;
   border-radius: 15px;
-  border: 4px solid gold;
-  background-color: black;
-  color: gold;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.boton_membresia:hover {
-  background-color: gold;
-  color: black;
 }
 
 .boton-inscripcion {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  background-color: black;
   padding: 0.5rem;
   border-radius: 15px;
   width: 150px;
@@ -129,36 +99,24 @@ h1 {
 }
 
 .boton-inscripcion:hover {
-  background-color: gold;
-  color: black;
   transition: 0.3s;
 }
 
 .text_piso_equipamiento, button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: gold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  color: black;
 }
 
 .formulario button {
   width: 100%;
   padding: 14px;
-  background-color: black;
-  color: gold;
   font-size: 18px;
   border: none;
   border-radius: 15px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.formulario button:hover {
-  background-color: gold;
-  color: black;
 }
 
 /* Botón hamburguesa */
@@ -172,7 +130,6 @@ h1 {
 .navbar-toggler-icon {
   width: 30px;
   height: 3px;
-  background-color: gold;
   display: block;
   position: relative;
 }
@@ -182,7 +139,6 @@ h1 {
   position: absolute;
   width: 30px;
   height: 3px;
-  background-color: gold;
   left: 0;
 }
 
@@ -195,21 +151,17 @@ h1 {
 }
 
 .card {
-  border: 4px solid gold;
   margin-bottom: 1rem;
   min-height: 37rem;
-  box-shadow: 5px 5px 5px gold;
 }
 
 .titulo-de-tarjeta {
   font-size: 1.25rem;
-  color: black;
   margin: 0;
   padding: 0;
 }
 
 .card-body {
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,22 +172,15 @@ h1 {
 }
 
 .card-text {
-  color: black;
   border-radius: 12rem;
   margin: 0 1rem;
   text-align: center;
 }
 
 .card-title {
-  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  color: black;
   text-align: center;
   padding: 5rem;
-}
-
-.card-footer {
-  background-color: rgba(13, 13, 13, 0.6);
 }
 
 .container_box_principal_equipamiento {
@@ -252,7 +197,6 @@ h1 {
   height: 300px;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 5px 5px 5px gold;
 }
 
 .box_principal_equipamiento img {
@@ -269,7 +213,6 @@ h1 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,7 +235,6 @@ h1 {
   align-items: center;
   justify-content: center;
   font-size: medium;
-  color: black;
 }
 
 header {
@@ -302,7 +244,6 @@ header {
   height: 25vh;
   width: 100%;
   z-index: 9999;
-  background-color: rgba(13, 13, 13, 0.6);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   padding: 2.5rem 0;
   align-items: center;
@@ -321,6 +262,13 @@ header {
   filter: brightness(1.2);
 }
 
+.menu-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+}
+
 .box_contacto {
   margin-top: 11rem;
   display: flex;
@@ -334,7 +282,6 @@ header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  color: gold;
   margin-right: 10rem;
 }
 
@@ -343,7 +290,6 @@ header {
 }
 
 .contacto ul {
-  font-family: "Montserrat", sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -354,28 +300,23 @@ header {
 .separador {
   width: 90%;
   height: 2px;
-  background: gold;
   margin: 4rem auto;
   border-radius: 1rem;
 }
 
 .formulario {
   width: 100%;
-  background: white;
   padding: 30px;
   max-width: 500px;
   margin: 2rem auto;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px gold;
 }
 
 .formulario label {
-  font-family: "Montserrat", sans-serif;
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
   font-size: 15px;
-  color: black;
 }
 
 .formulario input,
@@ -383,14 +324,8 @@ header {
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
-  border: 1px solid black;
   border-radius: 8px;
   font-size: 16px;
-}
-
-footer {
-  border-top: 4px solid gold;
-  background-color: rgba(13, 13, 13, 0.6);
 }
 
 .footer {
@@ -400,15 +335,6 @@ footer {
   gap: 1rem;
   padding: 1.5rem 1rem;
   align-items: flex-end;
-}
-
-footer a {
-  color: gold;
-}
-
-footer a:hover {
-  color: white;
-  transition: color 0.3s ease;
 }
 
 .boxes_footer {
@@ -433,8 +359,6 @@ footer a:hover {
 
 .politica_term_cont a {
   text-decoration: none;
-  color: gold;
-  transition: color 0.3s ease;
 }
 
 .iconos_redes {
@@ -445,8 +369,6 @@ footer a:hover {
 .redes {
   width: 40px;
   height: 40px;
-  transition: transform 0.3s ease;
-  transition: filter 0.3s ease;
 }
 
 .redes:hover,
@@ -462,11 +384,76 @@ footer a:hover {
 
 .filtro_footer {
   background-color: rgba(0, 0, 0, 0.4);
-  color: white;
   width: 100%;
   text-align: center;
   padding: 0.5rem;
   font-size: 0.9rem;
+}
+
+body, .boton_membresia, .boton-inscripcion, .formulario button {
+  background-color: black;
+}
+
+.boton_membresia:hover, .boton-inscripcion:hover, .text_piso_equipamiento, button, .formulario button:hover, .precio_pases, .card-title, .card-text, .titulo-de-tarjeta, .formulario label {
+  color: black;
+}
+
+.formulario input, .formulario textarea {
+  border: 1px solid black;
+}
+
+.boton_membresia:hover, .boton-inscripcion:hover, .text_piso_equipamiento button, .formulario button:hover, .separador, .menu-line, .navbar-toggler-icon, .navbar-toggler-icon::before, .navbar-toggler-icon::after {
+  background-color: gold;
+}
+
+p, .titulos_membresias, .title_membresiasypases, h1, .boton_membresia, .formulario button, .contacto, footer a, .politica_term_cont a {
+  color: gold;
+}
+
+a {
+  text-decoration: none;
+  color: gold;
+}
+
+.card-footer, footer, header {
+  background-color: rgba(13, 13, 13, 0.6);
+}
+
+footer a:hover, .filtro_footer, .text_piso_equipamiento, a:hover {
+  color: white;
+}
+
+.card-body, .formulario {
+  background-color: white;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.card, .boton_membresia {
+  border: 4px solid gold;
+}
+
+footer {
+  border-top: 4px solid gold;
+}
+
+.card, .box_principal_equipamiento, .formulario {
+  box-shadow: 5px 5px 5px gold;
+}
+
+a:hover, footer a:hover, .politica_term_cont a {
+  transition: color 0.3s ease;
+}
+
+.formulario button {
+  transition: background-color 0.3s ease;
+}
+
+.redes {
+  transition: transform 0.3s ease;
+  transition: filter 0.3s ease;
 }
 
 /* Media Queries */
@@ -584,29 +571,6 @@ footer a:hover {
   }
   .iconos_redes {
     justify-content: space-between;
-  }
-}
-@media (max-width: 768px) {
-  #navbarMenu {
-    background-color: rgba(13, 13, 13, 0.6);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    background-color: rgba(13, 13, 13, 0.6);
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-    gap: 1rem;
-    z-index: 9998;
-  }
-  #navbarMenu a {
-    font-size: 1rem;
-    color: gold;
-    padding: 0.5rem 1rem;
-  }
-  #navbarMenu a:hover {
-    color: white;
   }
 }
 

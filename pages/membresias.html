@@ -15,14 +15,14 @@
     <header>
       <div class="container-fluid bg-dark text-white py-3">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-          <a href="../index.html"><img class="logo" src="../assets/img/goldsgymlogo.png" alt="logotipo Gold's Gym" width="150" height="150"></a>
-          <!-- Botón hamburguesa solo visible en mobile -->
-          <button class="navbar-toggler d-md-none" type="button" id="menu-toggle" aria-label="Abrir menú">
-            <span style="display:block; width:25px; height:3px; background:#F2CB05; margin:5px 0;"></span>
-            <span style="display:block; width:25px; height:3px; background:#F2CB05; margin:5px 0;"></span>
-            <span style="display:block; width:25px; height:3px; background:#F2CB05; margin:5px 0;"></span>
+          <a href="../index.html">
+            <img class="logo" src="../assets/img/goldsgymlogo.png" alt="logotipo Gold's Gym" width="150" height="150">
+          </a>
+          <button class="navbar-toggler d-md-none menu-toggle" type="button" id="menu-toggle" aria-label="Abrir menú">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
           </button>
-          <!-- Menú de navegación -->
           <nav id="navbarMenu" class="d-none d-md-flex">
             <a href="acerca_de.html" class="text-gold mx-2">Acerca de</a>
             <a href="membresias.html" class="text-gold mx-2">Membresías</a>
@@ -41,7 +41,7 @@
           </div>
           <div data-aos="fade-left" data-aos-duration="1000">
             <p>
-              $124.99/MES + $99 DE INSCRIPCIÓN. Contrato de 12 meses. La membresía
+              $124.99/mes + $99 de inscripción. Contrato de 12 meses. La membresía
               es para un adulto mayor de 18 años. Se renueva automáticamente a
               partir del mes 13, convirtiéndose en una membresía mensual continua.
               El miembro puede cancelar en cualquier momento después del duodécimo
@@ -61,7 +61,7 @@
           <h2 class="titulos_membresias" data-aos="fade-right" data-aos-duration="1000">Membresía Flexible</h2>
           <div data-aos="fade-left" data-aos-duration="1000">
             <p>
-              $149.99/MES + $99 DE INSCRIPCIÓN. Contrato mensual. Membresía para un
+              $149.99/mes + $99 de inscripción. Contrato mensual. Membresía para un
               adulto mayor de 18 años con pago por uso. Se renueva automáticamente
               cada mes. El miembro puede cancelar en cualquier momento con 30 días
               de anticipación. La cuota de inscripción y el primer mes de
@@ -85,55 +85,25 @@
         </div>
         <div class="boxes_footer">
           <ul class="politica_terminos">
-            <li class="politica_term_cont">
-              <a href="contacto.html">Contacto</a>
-            </li>
-            <li class="politica_term_cont">
-              <a href="#">Política de privacidad</a>
-            </li>
-            <li class="politica_term_cont">
-              <a href="#">Términos y condiciones</a>
-            </li>
+            <li class="politica_term_cont"><a href="contacto.html">Contacto</a></li>
+            <li class="politica_term_cont"><a href="#">Política de privacidad</a></li>
+            <li class="politica_term_cont"><a href="#">Términos y condiciones</a></li>
           </ul>
         </div>
         <div class="boxes_footer">
           <ul class="iconos_redes">
-            <li>
-              <a target="_blank" href="https://www.instagram.com/">
-                <img src="../assets/img/instagram.png" alt="Icono de Instagram" class="redes" />
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.facebook.com/">
-                <img src="../assets/img/facebook.png" alt="Icono de Facebook" class="redes" />
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://web.whatsapp.com/">
-                <img src="../assets/img/whatsapp.png" alt="Icono de WhatsApp" class="redes" />
-              </a>
-            </li>
+            <li><a target="_blank" href="https://www.instagram.com/"><img src="../assets/img/instagram.png" alt="Icono de Instagram" class="redes" /></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/"><img src="../assets/img/facebook.png" alt="Icono de Facebook" class="redes" /></a></li>
+            <li><a target="_blank" href="https://web.whatsapp.com/"><img src="../assets/img/whatsapp.png" alt="Icono de WhatsApp" class="redes" /></a></li>
           </ul>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <script>
-      const toggleButton = document.getElementById("menu-toggle");
-      const menu = document.getElementById("navbarMenu");
-
-      toggleButton.addEventListener("click", () => {
-        menu.classList.toggle("d-none");
-        menu.classList.toggle("d-flex");
-        menu.classList.toggle("flex-column");
-      });
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="../menu_mobile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script>AOS.init();</script>
   </body>
 </html>
 

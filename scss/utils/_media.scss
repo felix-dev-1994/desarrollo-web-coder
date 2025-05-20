@@ -135,31 +135,3 @@ $hover-color: white;
     justify-content: space-between;
   }
 }
-
-@media (max-width: 768px) {
-  #navbarMenu {
-    background-color: $tertiary-color;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    background-color: $tertiary-color;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-    gap: 1rem;
-    z-index: 9998;
-  }
-
-  #navbarMenu a {
-    font-size: 1rem;
-    color: $secondary-color;
-    padding: 0.5rem 1rem;
-  }
-
-  #navbarMenu a:hover {
-    color: $hover-color;
-  }
-}
-
-

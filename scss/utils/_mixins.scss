@@ -6,12 +6,25 @@
     background-color: $background;
     color: $color;
     border: none;
-    padding: $button-padding;
-    border-radius: $button-radius;
+    padding: 10px 20px;
+    border-radius: 15px;
     cursor: pointer;
     @include transition(background-color, 0.3s);
 
     &:hover {
     background-color: darken($background, 10%);
     }
+}
+
+a:hover, footer a:hover, .politica_term_cont a {
+    @include transition(color, 0.3s);
+}
+
+.formulario button{
+    @include transition(background-color, 0.3s);
+}
+
+.redes{
+    @include transition(transform, 0.3s);
+    @include transition(filter, 0.3s);
 }
