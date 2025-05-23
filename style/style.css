@@ -73,9 +73,32 @@ h1 {
 
 .texto_presentacion {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
   padding: 5rem;
   margin-left: 2rem;
-  text-align: left;
+}
+
+.contenido-colapsable {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 13em;
+  width: 100%;
+}
+
+.contenido-colapsable.expandido {
+  max-height: 1000px;
+}
+
+.boton-mas {
+  margin-top: 1em;
+  background: transparent;
+  padding: 0.4em 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
 }
 
 .boton_membresia {
@@ -238,19 +261,19 @@ h1 {
 }
 
 header {
-  display: flex;
   position: fixed;
   top: 0;
   height: 25vh;
   width: 100%;
   z-index: 9999;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  padding: 2.5rem 0;
+  padding: 0;
   align-items: center;
 }
 
-.container-fluid {
-  background-color: transparent !important;
+.navbar {
+  display: flex;
+  height: 100%;
 }
 
 .logo {
@@ -415,7 +438,7 @@ a {
   color: gold;
 }
 
-.card-footer, footer, header {
+.card-footer, footer, .navbar {
   background-color: rgba(13, 13, 13, 0.6);
 }
 
@@ -443,6 +466,21 @@ footer {
   box-shadow: 5px 5px 5px gold;
 }
 
+.boton-mas {
+  color: gold;
+  border: 2px solid gold;
+}
+
+.boton-mas:hover {
+  background-color: gold;
+  color: black;
+}
+
+@media (max-width: 576px) {
+  .navbar, .container {
+    background-color: black;
+  }
+}
 a:hover, footer a:hover, .politica_term_cont a {
   transition: color 0.3s ease;
 }
@@ -460,6 +498,9 @@ a:hover, footer a:hover, .politica_term_cont a {
 @media (max-width: 576px) {
   header {
     margin-top: 0;
+  }
+  .navbar {
+    height: 110%;
   }
   main {
     margin-top: -3.5rem;
@@ -496,7 +537,10 @@ a:hover, footer a:hover, .politica_term_cont a {
     text-transform: uppercase;
     text-align: center;
     margin-left: 1rem;
-    padding: 40px;
+    padding: 40px 1em;
+    padding-bottom: 3rem;
+    line-height: 1.6;
+    overflow: visible;
   }
   .hogar_de_los_campeones {
     justify-content: center;
@@ -506,7 +550,7 @@ a:hover, footer a:hover, .politica_term_cont a {
     padding-top: 15px;
   }
   .card {
-    width: 90% !important;
+    width: 90%;
     margin: 0 auto 2rem auto;
   }
   .card_pases {
